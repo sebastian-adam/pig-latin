@@ -21,7 +21,7 @@ function translator(words) {
     }
     //check to see if the words is a number
     if(isNaN(parseInt(word))) {
-      //if no punctuation exists concat ""
+      //if no punctuation exists concat "", otherwise undefined
       if (!punctuation) {
         punctuation = "";
       }

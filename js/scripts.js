@@ -31,7 +31,7 @@ function translator(words) {
          word.search("i") === -1 &&
          word.search("o") === -1 &&
          word.search("u") === -1) {
-        var piggedWord = word.concat("ay");
+        var piggedWord = word.concat("ay").concat(punctuation);
         latinArray.push(piggedWord);
       } else {
         //For words that start with consonant, move to end.

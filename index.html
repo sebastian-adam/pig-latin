@@ -5,19 +5,32 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Pig Latin Translator</title>
   </head>
   <body>
-    <div class="container">
-      <form id="translator">
-        <label for="english"></label>
-        <input id="english" type="text">
-
-        <button id="submit" type="submit" name="button">Translate</button>
-      </form>
+    <div class="jumbotron">
+      <h1 class="text-center">Pig Latin Translator</h1>
     </div>
-    <div class="translation">
-      <p id="display-result"></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 well">
+          <form id="translator">
+            <div class="form-group">
+              <label for="english">Please enter some text:</label>
+              <textarea id="english" class="form-control" rows="3" placeholder="extarea-tay"></textarea>
+            </div>
+            <div class="form-group">
+              <button id="submit" type="submit" class="btn btn-info btn-lg">Translate</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-offset-3 well" id="translation">
+        <h2>Here's your translation</h2>
+        <p id="display-result"></p>
+      </div>
     </div>
   </body>
 </html>
